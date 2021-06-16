@@ -19,8 +19,9 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
 ## Running end-to-end tests
+Note: Please be sure that the application is up and running before running the end to end tests locally. You can use `ng serve` to start the application locally incase if it not up and running.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Run `npm run e2e` to execute the end-to-end tests via [Test Cafe](https://testcafe.io/).
 
 ## Further help
 

@@ -7,7 +7,7 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "testcafe chrome ./e2e/tests/*.test.ts"
+    "e2e": "testcafe ./e2e/tests/*.test.ts"
   },
   "private": true,
   "dependencies": {
