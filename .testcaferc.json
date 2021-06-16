@@ -1,0 +1,11 @@
+{
+    "browsers": "chrome",
+    "src": "e2e/tests/*.test.ts",
+    "reporter": "list",
+    "screenshots":{
+        "path": "reports/screenshots",
+        "takeOnFails": true,
+        "fullPage": true
+    },
+    "concurrency": 5
+}
