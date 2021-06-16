@@ -1,0 +1,16 @@
+<app-header></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <br>
+      <span>
+        <button class="btn btn-success" *ngIf="id >= 0" (click)="onNew()" [disabled]="editingListIndex >= 0">New Item</button>
+        <button class="btn btn-danger pull-right" *ngIf="id >= 0" (click)="deleteBoard()" [disabled]="editingListIndex >= 0">Delete Current Board</button>
+      </span>
+      <br><br>
+      <app-list-new *ngIf="isNew"></app-list-new>
+      <app-list></app-list>
+    </div>
+  </div>
+</div>
+<div class="pull-right"></div>

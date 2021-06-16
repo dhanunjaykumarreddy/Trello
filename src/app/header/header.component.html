@@ -1,0 +1,20 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="dropdown nav navbar-nav" appDropdown>
+        <a style="cursor: pointer;" class="navbar-brand" role="button" *ngIf="boards.length > 0"><span *ngIf="id >= 0">{{ boards[id].title }}</span>  <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li *ngFor="let board of boards; let i = index;">
+            <a id="boardTitle" routerLinkActive="active" style="cursor: pointer;" (click)="routeTo(i)">{{ board.title }}</a>
+          </li>
+        </ul>
+      </a>
+    </div>
+    <a
+      class="navbar-brand"
+      style="cursor: pointer;color:#5bc0de"
+      routerLink="/board-new">
+      New Board</a>
+  </div>
+</nav>
+
